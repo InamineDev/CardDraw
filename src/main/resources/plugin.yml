@@ -1,0 +1,7 @@
+name: CardDraw
+version: '${version}'
+main: me.inamine.carddraw.CardDraw
+api-version: 1.18
+authors: [ Inamine ]
+description: Draw a random card from a configurable deck
+website: Inamine.me
