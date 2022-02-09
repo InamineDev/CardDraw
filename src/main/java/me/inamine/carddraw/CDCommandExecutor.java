@@ -45,14 +45,18 @@ public class CDCommandExecutor implements CommandExecutor {
     String commandName = command.getName();
     if (commandName.equalsIgnoreCase(baseCommand)) {
       if (args.length >= 1 && args[0].equalsIgnoreCase("reload")) {
-        plugin.reloadConfig();
-        fileManager.checkFiles();
-        baseCommand = plugin.getConfig().getString("commands.base.command", "carddraw");
-        drawCommand = plugin.getConfig().getString("commands.draw.command", "draw");
-        shuffleCommand = plugin.getConfig().getString("commands.shuffle.command", "shuffle");
-        prefix = fileManager.getMsg().getString("prefix", "&e[&5Card Draw&e] ");
-        sender.sendMessage(ChatColor.translateAlternateColorCodes('&', fileManager.getMsg().getString("reload-message")
-                .replace("%prefix%", prefix)));
+        if (sender.hasPermission("carddraw.reload")) {
+          plugin.reloadConfig();
+          fileManager.checkFiles();
+          baseCommand = plugin.getConfig().getString("commands.base.command", "carddraw");
+          drawCommand = plugin.getConfig().getString("commands.draw.command", "draw");
+          shuffleCommand = plugin.getConfig().getString("commands.shuffle.command", "shuffle");
+          prefix = fileManager.getMsg().getString("prefix", "&e[&5Card Draw&e] ");
+          sender.sendMessage(ChatColor.translateAlternateColorCodes('&', fileManager.getMsg().getString("reload-message")
+                  .replace("%prefix%", prefix)));
+        } else {
+          sender.sendMessage(ChatColor.translateAlternateColorCodes('&', fileManager.getMsg().getString("no-permission", "&cYou do not have permission to do that!")));
+        }
       } else {
         for (String messageLine : fileManager.getMsg().getStringList("help")) {
           messageLine = messageLine.replace("%base-command%", baseCommand);
