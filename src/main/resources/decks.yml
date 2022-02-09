@@ -1,0 +1,90 @@
+## Name of the deck
+## Used for permissions and command
+## This would use carddraw.draw.52cards and /draw 52cards
+## This should be lowercase, but can contain numbers
+52cards:
+  ## If the deck should only have one of each card
+  ## If this is false, the deck will grab a random card, regardless of if it's been drawn
+  ## If true, the deck must run out and be shuffled before it can repeat a card
+  unique-cards: true
+  ## If true, only the player will see what they drew
+  ## If false, everyone sees what the player drew
+  secret: false
+  cards:
+    - "&7Ace of Spades"
+    - "&7Two of Spades"
+    - "&7Three of Spades"
+    - "&7Four of Spades"
+    - "&7Five of Spades"
+    - "&7Six of Spades"
+    - "&7Seven of Spades"
+    - "&7Eight of Spades"
+    - "&7Nine of Spades"
+    - "&7Ten of Spades"
+    - "&7Jack of Spades"
+    - "&7Queen of Spades"
+    - "&7King of Spades"
+    - "&8Ace of Clubs"
+    - "&8Two of Clubs"
+    - "&8Three of Clubs"
+    - "&8Four of Clubs"
+    - "&8Five of Clubs"
+    - "&8Six of Clubs"
+    - "&8Seven of Clubs"
+    - "&8Eight of Clubs"
+    - "&8Nine of Clubs"
+    - "&8Ten of Clubs"
+    - "&8Jack of Clubs"
+    - "&8Queen of Clubs"
+    - "&8King of Clubs"
+    - "&4Ace of Hearts"
+    - "&4Two of Hearts"
+    - "&4Three of Hearts"
+    - "&4Four of Hearts"
+    - "&4Five of Hearts"
+    - "&4Six of Hearts"
+    - "&4Seven of Hearts"
+    - "&4Eight of Hearts"
+    - "&4Nine of Hearts"
+    - "&4Ten of Hearts"
+    - "&4Jack of Hearts"
+    - "&4Queen of Hearts"
+    - "&4King of Hearts"
+    - "&cAce of Diamonds"
+    - "&cTwo of Diamonds"
+    - "&cThree of Diamonds"
+    - "&cFour of Diamonds"
+    - "&cFive of Diamonds"
+    - "&cSix of Diamonds"
+    - "&cSeven of Diamonds"
+    - "&cEight of Diamonds"
+    - "&cNine of Diamonds"
+    - "&cTen of Diamonds"
+    - "&cJack of Diamonds"
+    - "&cQueen of Diamonds"
+    - "&cKing of Diamonds"
+villagechest:
+  ## If the deck should only have one of each card
+  ## If this is false, the deck will grab a random card, regardless of if it's been drawn
+  ## If true, the deck must run out and be shuffled before it can repeat a card
+  unique-cards: false
+  ## If true, only the player will see what they drew
+  ## If false, everyone sees what the player drew
+  secret: true
+  cards:
+    - "&aAdvance to Boardwalk"
+    - "&aAdvance to Go (Collect $200)"
+    - "&aAdvance to Illinois Avenue. If you pass Go, collect $200"
+    - "&aAdvance to St. Charles Place. If you pass Go, collect $200"
+    - "&aAdvance to the nearest Railroad. If unowned, you may buy it from the Bank. If owned, pay wonder twice the rental to which they are otherwise entitled"
+    - "&aAdvance to the nearest Railroad. If unowned, you may buy it from the Bank. If owned, pay wonder twice the rental to which they are otherwise entitled"
+    - "&aAdvance token to nearest Utility. If unowned, you may buy it from the Bank. If owned, throw dice and pay owner a total ten times amount thrown."
+    - "&aBank pays you dividend of $50"
+    - "&aGet Out of Jail Free"
+    - "&aGo Back 3 Spaces"
+    - "&aGo to Jail. Go directly to Jail, do not pass Go, do not collect $200"
+    - "&aMake general repairs on all your property. For each house pay $25. For each hotel pay $100"
+    - "&aSpeeding fine $15"
+    - "&aTake a trip to Reading Railroad. If you pass Go, collect $200"
+    - "&aYou have been elected Chairman of the Board. Pay each player $50"
+    - "&aYour building loan matures. Collect $150"

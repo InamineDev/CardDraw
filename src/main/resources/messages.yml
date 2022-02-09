@@ -1,0 +1,14 @@
+prefix: "&e[&5Card Draw&e] "
+no-permission: "&cYou do not have permission to do that!"
+deck-shuffled: "&e%deck% has been shuffled by %player%"
+draw-card: "&e%player% drew from &a%deck%&e: %card%"
+no-shuffling: "&eThis deck doesn't need to be shuffled!"
+help:
+  - "&eCard Draw &a- &eThe Supreme Card Drawing solution"
+  - "&e/%base-command% &a- &eBase command for reloading and help menu"
+  - "&e/%draw-command% &a- &eDraw a card from a deck"
+  - "&e/%shuffle-command% &a- &eShuffle a deck"
+invalid-use: "&cInvalid usage! Use /%command% <deck>" ## Will list decks after
+console-cannot: "Console cannot use this command!"
+empty-deck: "&cThat deck is empty! Get someone to shuffle it!"
+reload-message: "&aReload complete!"

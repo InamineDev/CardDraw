@@ -1,0 +1,29 @@
+## If a player that has permission to draw a card
+## can shuffle that deck
+## If false the player will need "carddraw.shuffle.<deckname>"
+## If anyone can shuffle they will also be able to shuffle
+## when deck is not empty
+anyone-can-shuffle: false
+## If the deck should shuffle as soon as it runs out
+auto-shuffle: false
+## if true, cards will autoshuffle when deck is empty
+## if above is true. even if player does not have permission
+auto-shuffle-permissionless: false
+broadcast-shuffles: false
+commands:
+  ## Do not put /
+  base:
+    ## Admin commands
+    command: "carddraw"
+    aliases:
+      - "cd"
+  draw:
+    ## Player command for drawing a card
+    command: "draw"
+    aliases:
+      - "dr"
+  shuffle:
+    ## Player/Admin command for shuffling a deck
+    command: "shuffle"
+    aliases:
+      - "sh"

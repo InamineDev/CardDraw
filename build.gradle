@@ -45,3 +45,14 @@ processResources {
         expand props
     }
 }
+
+
+task copyJarToBin {
+    doLast {
+        copy {
+            from 'build/libs/CardDraw-' + version + '.jar'
+            into 'debug/plugins'
+        }
+    }
+}
+copyJarToBin.dependsOn(jar)
